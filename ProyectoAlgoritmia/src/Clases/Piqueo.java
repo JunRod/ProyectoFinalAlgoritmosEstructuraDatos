@@ -7,17 +7,17 @@ public class Piqueo {
 	    private int tipoPiqueo;
 	    private double precio;
 	    private boolean estado;
-
-	    public Piqueo(String idPiqueo, String nombre, int tipoPiqueo, double precio) {
-	        this.idPiqueo = idPiqueo;
-	        this.nombre = nombre;
-	        this.tipoPiqueo = tipoPiqueo;
-	        this.precio = precio;
-	        this.estado = true; 
-	    }
-
 	    
-	    public String getIdPiqueo() {
+	    public Piqueo(String idPiqueo, String nombre, int tipoPiqueo, double precio, boolean estado) {
+			super();
+			this.idPiqueo = idPiqueo;
+			this.nombre = nombre;
+			this.tipoPiqueo = tipoPiqueo;
+			this.precio = precio;
+			this.estado = estado;
+		}
+
+		public String getIdPiqueo() {
 	        return idPiqueo;
 	    }
 

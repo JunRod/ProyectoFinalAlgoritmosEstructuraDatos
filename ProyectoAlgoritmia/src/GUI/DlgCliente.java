@@ -72,7 +72,7 @@ public class DlgCliente extends JDialog implements ActionListener, KeyListener, 
 
 	public DlgCliente() {
 		setResizable(false);
-		setTitle("Mantenimiento | Usuario");
+		setTitle("Mantenimiento | Cliente");
 		setBounds(100, 100, 931, 572);
 		getContentPane().setLayout(null);
 		
@@ -222,11 +222,13 @@ public class DlgCliente extends JDialog implements ActionListener, KeyListener, 
 		getContentPane().add(lblFechaDeAfilicacion);
 		
 		dateFechaNacimiento = new JDateChooser();
+		dateFechaNacimiento.setToolTipText("dia / mes / año");
 		dateFechaNacimiento.setDateFormatString("d / MMM / y");
 		dateFechaNacimiento.setBounds(166, 167, 165, 22);
 		getContentPane().add(dateFechaNacimiento);
 		
 		dateFechaAfiliacion = new JDateChooser();
+		dateFechaAfiliacion.setToolTipText("dia / mes / año");
 		dateFechaAfiliacion.setDateFormatString("d / MMM / y");
 		dateFechaAfiliacion.setBounds(166, 201, 165, 22);
 		getContentPane().add(dateFechaAfiliacion);
@@ -335,7 +337,6 @@ public class DlgCliente extends JDialog implements ActionListener, KeyListener, 
 			mensaje("tiene que rellenar todos los campos");
 			return ;
 		}
-			
 		
 		if (btnAdicionar.isEnabled() == false) {
 			Cliente clienteNuevo = new Cliente(idCliente, apellidoPaterno, apellidoMaterno, nombres, direccion, fechaNacimiento, fechaAfiliacion,
@@ -347,13 +348,11 @@ public class DlgCliente extends JDialog implements ActionListener, KeyListener, 
 			Cliente clienteModificado = arregloCliente.buscar(idCliente);
 			clienteModificado.setIdCliente(idCliente);
 			clienteModificado.setApellidoPaterno(apellidoPaterno);
-			clienteModificado.setApellidoPaterno(apellidoPaterno);
+			clienteModificado.setApellidoPaterno(apellidoMaterno);
 			clienteModificado.setNombres(nombres);
 			clienteModificado.setDireccion(direccion);
-			/*
 			clienteModificado.setFechaNacimiento(fechaNacimiento);
 			clienteModificado.setFechaAfiliacion(fechaAfiliacion);
-			*/
 			clienteModificado.setEstadoCivil(estadoCivil);
 			clienteModificado.setTelefono(telefono);
 			clienteModificado.setDni(dni);

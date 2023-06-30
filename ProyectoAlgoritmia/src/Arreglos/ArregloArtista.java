@@ -31,8 +31,7 @@ public class ArregloArtista {
 	}
 	public Artista buscar(String id) {
 		for (int i=0; i<tamano(); i++) {
-			if (obtener(i).getIdArtista() == id)
-				System.out.println(id + "\n" + obtener(i)); //Nosé porque sin esto no funciona
+			if (obtener(i).getIdArtista().equals(id))
 				return obtener(i);
 		}
 		return null;

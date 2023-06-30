@@ -8,18 +8,18 @@ public class Bebida {
 	    private String marca;
 	    private double precio;
 	    private boolean estado;
-
-	    public Bebida(String idBebida, String nombre, int tipoBebida, String marca, double precio) {
-	        this.idBebida = idBebida;
-	        this.nombre = nombre;
-	        this.tipoBebida = tipoBebida;
-	        this.marca = marca;
-	        this.precio = precio;
-	        this.estado = true; 
-	    }
-
 	    
-	    public String getIdBebida() {
+	    public Bebida(String idBebida, String nombre, int tipoBebida, String marca, double precio, boolean estado) {
+			super();
+			this.idBebida = idBebida;
+			this.nombre = nombre;
+			this.tipoBebida = tipoBebida;
+			this.marca = marca;
+			this.precio = precio;
+			this.estado = estado;
+		}
+
+		public String getIdBebida() {
 	        return idBebida;
 	    }
 

@@ -27,8 +27,7 @@ public class ArregloUsuario {
 	}
 	public Usuario buscar(String IdUsuario) {
 		for (int i=0; i<tamano(); i++) {
-			if (obtener(i).getIdUsuario() == IdUsuario)
-				System.out.println(IdUsuario + "\n" + obtener(i)); //Nosé porque sin esto no funciona
+			if (obtener(i).getIdUsuario().equals(IdUsuario))
 				return obtener(i);
 		}
 		return null;

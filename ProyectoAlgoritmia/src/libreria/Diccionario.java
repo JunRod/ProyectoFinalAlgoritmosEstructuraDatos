@@ -18,6 +18,8 @@ public class Diccionario {
 	public static String[] estadoCivil = { "Soltero", "Casado", "Viudo", "Divorciado", "No especifica"};
 	public static String[] tipoDeCliente = { "Estandar", "Bronce", "Plata", "Oro", "Diamante"};
 	public static String[] estado = { "Inhabilitado", "Habilitado"};
+	public static String[] tipoPiqueo = { "Frios", "Calientes", "Snacks"};
+	public static String[] tipoBebida = { "Cerveza",  "Vinos", "Whisky", "Ron", "Frutado", "Conbinacion preparada",  "Agua embotellada"};
 	
 	public static String[] IdGeneros;
 	public static String[] IdArtistas;

@@ -36,9 +36,9 @@ public class ArregloCliente {
 
 	public Cliente buscar(String IdCliente) {
 		for (int i = 0; i < tamano(); i++) {
-			if (obtener(i).getIdCliente() == IdCliente)
-				System.out.println(IdCliente + "\n" + obtener(i)); // Nosé porque sin esto no funciona
-			return obtener(i);
+			if (obtener(i).getIdCliente().equals(IdCliente)) {
+				return obtener(i);
+			}
 		}
 		return null;
 	}
@@ -60,7 +60,7 @@ public class ArregloCliente {
 			pw = new PrintWriter(new FileWriter("./src/clientes.txt"));
 			for (int i = 0; i < tamano(); i++) {
 				cliente = obtener(i);
-				linea = cliente.getIdCliente() + ";" + cliente.getApellidoPaterno() + ";" + cliente.getApellidoPaterno()
+				linea = cliente.getIdCliente() + ";" + cliente.getApellidoPaterno() + ";" + cliente.getApellidoMaterno()
 						+ ";" + cliente.getNombres() + ";" + cliente.getDireccion() + ";"
 						+ cliente.getFechaNacimientoFormateada() + ";" + cliente.getFechaAfiliacionFormateada() + ";"
 						+ cliente.getEstadoCivil() + ";" + cliente.getTelefono() + ";" + cliente.getDni() + ";"

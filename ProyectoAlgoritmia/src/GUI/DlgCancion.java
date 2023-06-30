@@ -72,7 +72,7 @@ public class DlgCancion extends JDialog implements ActionListener, KeyListener, 
 
 	public DlgCancion() {
 		setResizable(false);
-		setTitle("Mantenimiento | Artista");
+		setTitle("Mantenimiento | Cancion");
 		setBounds(100, 100, 931, 572);
 		getContentPane().setLayout(null);
 		
