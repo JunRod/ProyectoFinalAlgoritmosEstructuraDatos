@@ -151,7 +151,7 @@ public class DlgArtista extends JDialog implements ActionListener, KeyListener, 
 		lblFechaRegistro.setBounds(10, 113, 141, 23);
 		getContentPane().add(lblFechaRegistro);
 		
-		cboEstado = new JComboBox<String>(Diccionario.estado);
+		cboEstado = new JComboBox(Diccionario.estado);
 		cboEstado.setEnabled(false);
 		cboEstado.setBounds(165, 149, 156, 23);
 		getContentPane().add(cboEstado);
@@ -176,7 +176,7 @@ public class DlgArtista extends JDialog implements ActionListener, KeyListener, 
 		editarFila();
 		habilitarEntradas(false);
 	}
-	JComboBox<String> cboEstado;
+	JComboBox cboEstado;
 	
 	JLabel lblIdGenero;
 	JDateChooser dateFechaRegistro;

@@ -144,7 +144,7 @@ public class DlgBebida extends JDialog implements ActionListener, KeyListener, M
 		lblDireccion.setBounds(10, 188, 141, 23);
 		getContentPane().add(lblDireccion);
 		
-		cboEstado = new JComboBox<String>(Diccionario.estado);
+		cboEstado = new JComboBox(Diccionario.estado);
 		cboEstado.setSelectedIndex(1);
 		cboEstado.setEnabled(false);
 		cboEstado.setBounds(165, 187, 156, 23);
@@ -191,7 +191,7 @@ public class DlgBebida extends JDialog implements ActionListener, KeyListener, M
 	}
 	
 	JComboBox cbTipoBebida;
-	JComboBox<String> cboEstado;
+	JComboBox cboEstado;
 	ArregloBebida arregloBebida = new ArregloBebida();
 	private JTextField txtNombre;
 	private JTextField txtID;

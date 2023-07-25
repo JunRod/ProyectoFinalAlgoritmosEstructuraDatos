@@ -13,7 +13,7 @@ import java.util.Date;
 public class ArregloCancion {
 	
 	//  Atributos privados
-	private ArrayList <Cancion> canciones;
+	private static ArrayList <Cancion> canciones;
 	//  Constructor
 	public ArregloCancion() {
 		canciones = new ArrayList <Cancion> ();
@@ -24,13 +24,13 @@ public class ArregloCancion {
 		canciones.add(x);
 		grabar();
 	}
-	public int tamano() {
+	public static int tamano() {
 		return canciones.size();
 	}
-	public Cancion obtener(int i) {
+	public static Cancion obtener(int i) {
 		return canciones.get(i);
 	}
-	public Cancion buscar(String id) {
+	public static Cancion buscar(String id) {
 		for (int i=0; i<tamano(); i++) {
 			if (obtener(i).getIdCancion().equals(id))
 				return obtener(i);

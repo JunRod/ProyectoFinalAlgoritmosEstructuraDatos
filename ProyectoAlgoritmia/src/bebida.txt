@@ -1,1 +1,2 @@
-BEB0001;awdad;2;wadawd;32.0;true
+BEB0001;adaadwa;1;adad;23.0;false
+BEB0002;awdwada;5;dwad;2323.0;true
